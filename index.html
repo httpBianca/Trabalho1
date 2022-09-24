@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>Acessibilidade na Web</title>
+</head>
+<body>
+    <header>
+        <h1>Acessibilidade na Web</h1>
+      </header>
+      <nav>
+        <ul>
+            <li><a href="#acessibilidade">Para quem é a acessibilidade?</a></li>
+            <li><a href="#link">Links</a></li>
+            <li><a href="#text">Texto</a></li>
+            <li><a href="#img">Imagens</a></li>
+          </ul>
+      </nav>
+      <!-- Aqui é o conteúdo principal da página -->
+      <main>
+        <!-- Que contém um artigo -->
+        <article>
+          <h2 id="acessibilidade">Para quem é a acessibilidade?</h2>
+      
+          <p>A acessibilidade na web é voltada para pessoas com algum tipo de deficiência, seja visual, auditiva, motora ou cognitiva. Por exemplo, pessoas cegas ou com baixa visão, daltônicos, pessoas surdas ou com perda auditiva, pessoas com dislexia, autismo, síndrome de Down ou Parkinson, entre outras condições. Foram desenvolvidas tecnologias assistivas para proporcionar maior independência e autonomia a esses usuários, como leitores de tela, ampliadores de tela, mouses e teclados especiais. Essas ferramentas, no entanto, serão melhor aproveitadas se os códigos do site seguirem determinados padrões.</p>
+        </article>
+      
+        <article>
+            <h2 id="link">Links</h2>
+            <p>Os links do tipo LEIA MAIS não são suficientemente descritivos fora do contexto. Exemplo:</p>
+
+            <p>GitHub é uma plataforma de hospedagem de código-fonte e arquivos com controle de versão usando o Git. Para acessa-lo <a href="https://github.com/" target= "_blank"> clique aqui.</a></p>
+
+            <p>Textos de links devem ser descritivos, Exemplo correto, com o link em toda a frase, sem o “Leia mais”:</p>
+
+            <p>GitHub é uma plataforma de hospedagem de código-fonte e arquivos com controle de versão usando o Git. <a href="https://github.com/" target= "_blank">GitHub</a>.</p>
+        </article>
+
+        <article>
+            <h2 id="text">Texto</h2>
+            <p>Organização é essencial.</p>
+                <h1>Exemplo 1</h1>
+                <h2>Exemplo 2</h2>
+                <h3>Exemplo 3</h3>
+                <h4>Exemplo 4</h4>
+                <h5>Exemplo 5</h5>
+                <h6>Exemplo 6</h6>
+        </article>
+
+        <article>
+            <h2 id="img">Imagens:</h2>
+            <p>A tag img possui um atributo chamado alt que permite especificar um texto alternativo que descreve a imagem. Este texto é lido por softwares leitores de tela e também é reconhecido por mecanismos de busca. A falta do atributo alt em imagens é uma das falhas mais comuns em acessibilidade web.</p>
+
+            <figure>
+                <img src="imagem_barco.jpg" alt="Um barco navegando em um lago calmo. Ao fundo, há uma mata ao redor do lago.">
+               
+            </figure>
+        </article>
+      </main>
+      
+</body>
+</html>
