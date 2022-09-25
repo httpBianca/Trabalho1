@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <h1>Acessibilidade na Web</h1>
+        <h1 id="inicio">Acessibilidade na Web</h1>
       </header>
       <nav>
         <ul>
@@ -17,6 +17,7 @@
             <li><a href="#link">Links</a></li>
             <li><a href="#text">Texto</a></li>
             <li><a href="#img">Imagens</a></li>
+            <li><a href="#table">Tabelas</a></li>
           </ul>
       </nav>
       <!-- Aqui é o conteúdo principal da página -->
@@ -41,8 +42,7 @@
 
         <article>
             <h2 id="text">Texto</h2>
-            <p>Organização é essencial.Uma das melhores formas de ajudar um leitor de tela a interpretar sua página é criar uma boa e consistente estrutura de títulos, parágrafos, listas, etc.</p>
-                <h1>Exemplo 1</h1>
+            <p>Organização é essencial. Uma das melhores formas de ajudar um leitor de tela a interpretar sua página é criar uma boa e consistente estrutura de títulos, parágrafos, listas, etc.</p>
                 <h1>Exemplo 1</h1>
                 <h2>Exemplo 2</h2>
                 <h3>Exemplo 3</h3>
@@ -52,15 +52,59 @@
         </article>
 
         <article>
-            <h2 id="img">Imagens:</h2>
+            <h2 id="img">Imagens</h2>
             <p>A tag img possui um atributo chamado alt que permite especificar um texto alternativo que descreve a imagem. Este texto é lido por softwares leitores de tela e também é reconhecido por mecanismos de busca. A falta do atributo alt em imagens é uma das falhas mais comuns em acessibilidade web.</p>
 
             <figure>
-                <img src="imagem_barco.jpg" alt="Um barco navegando em um lago calmo. Ao fundo, há uma mata ao redor do lago.">
-               
+                <img src="imagem_barco.jpg" alt="Paisagem de um lago">
+               <figcaption>Figura 1. Um barco navegando em um lago calmo. Ao fundo, há uma mata ao redor do lago.</figcaption>
             </figure>
         </article>
+
+        <article>
+          <h2 id="table">Tabelas</h2>
+          <p>As tabelas são normalmente considerados o "bicho de sete cabeças" quando se fala em acessibilidade web. Vamos ver um exemplo de tabela acessivel. Exemplo:</p>
+
+          <table class="bordered striped centered" summary="O número de trabalhadores e ano de fundação de algumas empresas tecnológicas">
+            <caption>Tabela 1: Informação sobre as empresas</caption>
+            <tr>
+              <th scope="row">Empresa</td>
+              <th scope="col">Nº Trabalhadores</th>
+              <th scope="col">Data de Fundação</th>
+            </tr>
+            <tr>
+              <td scope="row">Apple, Inc.</td>
+              <td>98000</td>
+              <td>1976</td>
+            </tr>
+            <tr>
+              <td scope="row">Google, Inc.</td>
+              <td>55000</td>
+              <td>1997</td>
+            </tr>
+          </table>
+          <br>
+          <p>Para tornar essa tabela acessivel usamos: o elemento <span>caption</span> com uma pequena descrição da tabela, o atributo <span>summary</span> para dar um resumo mais detalhado da tabela apenas para screen-readers, Para que a informação faça sentido para os utilizadores que não conseguem visualizar a tabela definimos o âmbito de cada cabeçalho através do atributo <span>scope</span>. Assim, podemos indicar que cada cabeçalho é <span>o título da coluna (scope="col") ou da linha (scope="row")</span> em que estiver inserido.</p>
+        </article>
+        <br>
+        <footer>
+          <br>
+          <p>Contatos</p> 
+          <a href="https://github.com/httpBianca">Github</a>
+          <br>
+          <a href="https://replit.com/@BiancaClainara">Replit</a>
+          <br>
+        </footer>
       </main>
-      
+      <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
 </body>
 </html>
