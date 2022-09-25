@@ -65,26 +65,26 @@
           <h2 id="table">Tabelas</h2>
           <p>As tabelas são normalmente considerados o "bicho de sete cabeças" quando se fala em acessibilidade web. Vamos ver um exemplo de tabela acessivel. Exemplo:</p>
 
-          <table class="bordered striped centered" summary="O número de trabalhadores e ano de fundação de algumas empresas tecnológicas">
+          <table class="bordered striped centered">
             <caption>Tabela 1: Informação sobre as empresas</caption>
             <tr>
-              <th scope="row">Empresa</td>
+              <th scope="row">Empresa</th>
               <th scope="col">Nº Trabalhadores</th>
               <th scope="col">Data de Fundação</th>
             </tr>
             <tr>
-              <td scope="row">Apple, Inc.</td>
+              <td>Apple, Inc.</td>
               <td>98000</td>
               <td>1976</td>
             </tr>
             <tr>
-              <td scope="row">Google, Inc.</td>
+              <td>Google, Inc.</td>
               <td>55000</td>
               <td>1997</td>
             </tr>
           </table>
           <br>
-          <p>Para tornar essa tabela acessivel usamos: o elemento <span>caption</span> com uma pequena descrição da tabela, o atributo <span>summary</span> para dar um resumo mais detalhado da tabela apenas para screen-readers, Para que a informação faça sentido para os utilizadores que não conseguem visualizar a tabela definimos o âmbito de cada cabeçalho através do atributo <span>scope</span>. Assim, podemos indicar que cada cabeçalho é <span>o título da coluna (scope="col") ou da linha (scope="row")</span> em que estiver inserido.</p>
+          <p>Para tornar essa tabela acessivel usamos: o elemento <span>caption</span> com uma pequena descrição da tabela, Para que a informação faça sentido para os utilizadores que não conseguem visualizar a tabela definimos o âmbito de cada cabeçalho através do atributo <span>scope</span>. Assim, podemos indicar que cada cabeçalho é <span>o título da coluna (scope="col") ou da linha (scope="row")</span> em que estiver inserido.</p>
         </article>
         <br>
         <footer>
